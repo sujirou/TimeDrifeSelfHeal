@@ -1,2 +1,7 @@
 # TimeDrifeSelfHeal
 Offline Time Drift Correction (ntp-disciplined Model)
+
+on Computer Internal Clock Systems, Time Drift and Overthinking 🤔
+ya'll notice that clocks are synced across all our devices yea? clocks in our cellphones, smart watches and PCs, etc but we take them for granted? thing is, they're not super accurate down to the NANOSECOND! without internet, these clocks start to drift over time! eventually, you might see them being hours apart! LOL WTF so they need to check in with time servers called NTP servers, to stay accurate.
+wouldn't  it be better these internal clocks "self-heal" time drift in case it cannot connect to the NTP for an extended period? say, during a zombie apocalypse? LOLOL so, soon's they contact an NTP server, they get the correct time and see how much their internal clock is off? and since this internal clock knows when it last contacted an NTP server, it can then calculate how much of its internal clock is drifting (say, 0.00023 sec/sec), it will then record this drift value somewhere internally in case it cannot connect to the NTP server sometime in the future? and if that happens, instead of just drifting away, it adjusts its clock with the calculated drift value?
+ergo, over (extended offline) time, this drift value becomes increasingly accurate and the computer can keep accurate time without the help of an external time source for months, maybe years? i.e., it can theoretically stay pretty accurate on its own for weeks—even during an apocalypse! haha
